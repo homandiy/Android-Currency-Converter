@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+
+    <string name="currency_prompt">Choose Currency</string>
+
+    <string-array name="currency_array">
+        <item>Select One</item>
+        <item>USD-US DOLLAR : 1</item>
+        <item>BPD-British Pound : 0.7669</item>
+        <item>CNY-Chinese Yuan : 6.7305</item>
+        <item>JPY-Japanese Yen : 110.69</item>
+        <item>RUB-Russian Ruble : 59.970</item>
+    </string-array>
+
+</resources>
