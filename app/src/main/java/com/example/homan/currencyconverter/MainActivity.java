@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     //convert user input with amount and currency options
     public void convertMoney(View view) {
-        EditText inputAmt = (EditText) findViewById(R.id.inputMoney);
+        EditText inputAmt = (EditText) findViewById(R.id.inputMoneyET);
         String money = inputAmt.getText().toString();
         TextView txtConvert = (TextView) findViewById(R.id.convertedResult);
 
@@ -28,11 +28,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //abstract input currency option
-        Spinner iSpinner = (Spinner) findViewById(R.id.pickCurrency1);
+        Spinner iSpinner = (Spinner) findViewById(R.id.inputCurrencySP);
         String inputCurrency = iSpinner.getSelectedItem().toString();
 
         //abstract output currency option
-        Spinner oSpinner = (Spinner) findViewById(R.id.pickCurrency2);
+        Spinner oSpinner = (Spinner) findViewById(R.id.convertCurrencySP);
         String outputCurrency = oSpinner.getSelectedItem().toString();
 
         //deal with the input currency with value
@@ -72,14 +72,14 @@ public class MainActivity extends AppCompatActivity {
 
     //clear history
     public void clearInput(View view) {
-        EditText inputAmt = (EditText) findViewById(R.id.inputMoney);
+        EditText inputAmt = (EditText) findViewById(R.id.inputMoneyET);
         TextView txtConvert = (TextView) findViewById(R.id.convertedResult);
 
         //abstract input currency option
-        Spinner iSpinner = (Spinner) findViewById(R.id.pickCurrency1);
+        Spinner iSpinner = (Spinner) findViewById(R.id.inputCurrencySP);
 
         //abstract output currency option
-        Spinner oSpinner = (Spinner) findViewById(R.id.pickCurrency2);
+        Spinner oSpinner = (Spinner) findViewById(R.id.convertCurrencySP);
 
         //clear everything
         iSpinner.setSelection(0);
